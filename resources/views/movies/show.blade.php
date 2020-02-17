@@ -1,3 +1,6 @@
+@extends('layouts.master')
+
+@section('content')
 
 <H3>{{$movie->title}}</H3>
 <div>
@@ -6,3 +9,5 @@
     <p>{{$movie->age}}</p>
     <p>{{$movie->genre}}</p>
 </div>
+
+@endsection
