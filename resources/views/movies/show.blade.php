@@ -2,12 +2,19 @@
 
 @section('content')
 
-<H3>{{$movie->title}}</H3>
+<h1>{{$movie->title}}</h1>
 <div>
-    <p>{{$movie->storyline}}</p>
     <p>{{$movie->director}}</p>
     <p>{{$movie->age}}</p>
     <p>{{$movie->genre}}</p>
+    <p>{{$movie->storyline}}</p>
+</div>
+<div>
+    @foreach($movie->comments as $comment)
+        <hr>
+        <p>{{$comment->content}}</p>
+        <p>{{$comment->created_at}}</p>
+    @endforeach
 </div>
 
 @endsection
