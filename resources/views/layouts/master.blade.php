@@ -7,21 +7,25 @@
     <title>IMDB</title>
 </head>
 <body>
-    <div class="container">
-		<nav class="nav">
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link" href="/movies">Movies</a> 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">Add Movie</a> 
+          <a class="nav-link" href="/movies/create">Add Movie</a> 
         </li>
         <li class="nav-item">
           <a class="nav-link" href="">PHP</a> 
         </li>
-        </nav> 
-	</div>
+      </div>
+    </nav> 
     <div class="container">
-        @yield('content')
+      <div class="card">
+        <div class="card-body">
+          @yield('content')
+        </div>
+      </div>
     </div> 
 </body>
 </html>
