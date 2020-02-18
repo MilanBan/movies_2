@@ -6,11 +6,11 @@
 @csrf
 <div class="form-group">
     <label for="title">Movie title</label>
-    <input type="text" required class="form-control"  placeholder="movie title" name="title"  value = {{old('title')}} >
+    <input type="text" class="form-control"  placeholder="movie title" name="title"  value = {{old('title')}} >
 </div>
 <div class="form-group">
     <label for="genre">Movie genre</label>
-    <input type="text" required class="form-control"  placeholder="movie genre" name="genre"  value = {{old('genre')}} >
+    <input type="text" class="form-control"  placeholder="movie genre" name="genre"  value = {{old('genre')}} >
 </div>
 <div class="form-group"> 
     <label for="director">Movie director</label>
